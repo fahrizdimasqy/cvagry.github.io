@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat';
+}
+
+.nav-link:hover::after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #1B2690;
+  border-radius: 50px;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3px;
+  margin-bottom: -8px;
+}
+
+.nav-item {
+  margin-right: 24px;
+  font-weight: 200;
+}
+
+.jumbotron {
+  background-image: url('../beach-84533_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  color: white;
+}
+
+.display-4 {
+  padding-top: 6%;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.card-img {
+  background-image: url('../slide2.jpg');
+  background-size: cover;
+  max-height: 90%;
+}
+
+.nav-item.active a {
+  color: crimson !important;
+  font-weight: 600;
+}
+
+.carousel-item img {
+  height: 550px;
+}
+
+hr {
+  width: 15%;
+  background-color: #1B2690;
+  padding: 1px;
+}
+
+hr.garis {
+  width: 11%;
+  margin-right: 90%;
+  background-color: #1B2690;
+  padding: 1px;
+}
+
+.features h3,
+.designer h3 {
+  font-family: 'Lora';
+  color: #1B2690;
+  font-weight: bold;
+}
+
+.features p,
+.designer p {
+  font-weight: 200;
+  color: #B7B7B7;
+}
+
+.figure-img {
+  position: relative;
+}
+
+.figure-img a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.figure-img a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 90px;
+    margin-top: 70px;
+  }
+
+  .card {
+    margin-bottom: 50px;
+  }
+}
