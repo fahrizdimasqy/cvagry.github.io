@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:200,400,600&display=swap"
         rel="stylesheet">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- My Style -->
     <link href="css/style.css" rel="stylesheet">
 
@@ -59,10 +61,13 @@
         <p class="lead">website penyedia layanan travel dan tour</p>
     </div>
     <!-- Akhir Navbar -->
-    <div class="container">
-        <div class="jumbotron">
+    <section>
+        <div class="container">
+            <div data-aos="fade-up" class="jumbotron">
+            </div>
         </div>
-    </div>
+    </section>
+
     <!-- jumbotron -->
 
     <!-- akhir jumbotron -->
@@ -71,7 +76,7 @@
     <section class="popular" style="padding-bottom: 50px;" id="traveltour">
         <div class="container pt-4">
             <p>Popular Destination</p>
-            <div class="row">
+            <div class="row" data-aos="fade-right">
                 <div class="col-md-3">
                     <div class="card mb-5">
                         <img class="card-img-top" src="slide2.jpg" alt="Card image cap">
@@ -189,7 +194,7 @@
     <!-- features -->
     <section class="features bg-light p-5" id="populartour">
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-3" data-aos="fade-left">
                 <div class="col">
                     <h3>Travel & Tour</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing <elit class=""></elit>
@@ -197,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="flip-left">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                     <figure class="figure">
                         <div class="figure-img">
@@ -260,14 +265,14 @@
     <!-- designer -->
     <section class="designer p-5">
         <div class="container">
-            <div class="row mb-3">
+            <div class="row mb-3" data-aos="zoom-in">
                 <div class="col">
                     <h3>Our Testimoni</h3>
                     <!-- <p>Pakaian terbaik dari designer profesional</p> -->
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="zoom-in-up">
                 <div class="col-6 col-sm-3 text-center">
                     <figure class="figure">
                         <img src="img/designer/1_1.png" class="figure-img img-fluid">
@@ -367,6 +372,12 @@
     <script src="js/smooth-scroll.js"></script>
     <script>
         var scrool = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
     </script>
 </body>
 
